@@ -1,7 +1,7 @@
 use std::{fs, i32};
 
 pub fn ans() -> i32 {
-    let contents = fs::read_to_string("input2_1").expect("Should have been able to read the file");
+    let contents = fs::read_to_string("inputs/input2_1").expect("Should have been able to read the file");
     let lines: Vec<String> = contents.lines().map(String::from).collect();
 
     let mut res = 0;
