@@ -3,7 +3,8 @@ use std::{fs, i32};
 pub fn ans() -> i32 {
     let mut nums1: Vec<i32> = vec![];
     let mut nums2: Vec<i32> = vec![];
-    let contents = fs::read_to_string("inputs/input1_1").expect("Should have been able to read the file");
+    let contents =
+        fs::read_to_string("inputs/input1_1").expect("Should have been able to read the file");
     let lines: Vec<String> = contents.lines().map(String::from).collect();
     for line in &lines {
         let nums: Vec<i32> = line

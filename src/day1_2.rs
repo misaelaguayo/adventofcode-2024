@@ -3,7 +3,8 @@ use std::{collections::HashMap, fs};
 pub fn ans() -> i32 {
     let mut counts: HashMap<i32, i32> = HashMap::new();
 
-    let contents = fs::read_to_string("inputs/input1_1").expect("Should have been able to read the file");
+    let contents =
+        fs::read_to_string("inputs/input1_1").expect("Should have been able to read the file");
     let lines: Vec<String> = contents.lines().map(String::from).collect();
     for line in &lines {
         let nums: Vec<i32> = line

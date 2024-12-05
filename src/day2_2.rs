@@ -30,7 +30,8 @@ pub fn level_is_safe(levels: Vec<i32>) -> bool {
 }
 
 pub fn ans() -> i32 {
-    let contents = fs::read_to_string("inputs/input2_1").expect("Should have been able to read the file");
+    let contents =
+        fs::read_to_string("inputs/input2_1").expect("Should have been able to read the file");
     let lines: Vec<String> = contents.lines().map(String::from).collect();
 
     let mut res = 0;
